@@ -39,9 +39,13 @@ cin >> number;
   for (int i =0; i < n; i++){
   if (number == flights[i].flightnumber){
    found = true;
+    flights[i].display();
     break;
   
   }
+  }
+
+  
   }
      if (!found) {
         cout << "\nFlight not found." << endl;
