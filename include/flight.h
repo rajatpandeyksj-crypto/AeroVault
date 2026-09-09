@@ -13,6 +13,15 @@ string destination;
 int price;
 int seats;
 
+Flight(string F, string s, string d, int p, int n){
+ flightnumber = fn;
+  source = s;
+  destination = d;
+  pruce = p;
+  seats = st;
+}
+
+
 void display(){
 cout << "flightnumber: "<<flightnumber<< endl;
 cout << "Source: "<< source << endl;
