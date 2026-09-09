@@ -13,11 +13,11 @@ string destination;
 int price;
 int seats;
 
-Flight(string F, string s, string d, int p, int n){
+Flight(string fn, string s, string d, int p, int st){
  flightnumber = fn;
   source = s;
   destination = d;
-  pruce = p;
+  price = p;
   seats = st;
 }
 
