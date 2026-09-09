@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "../include/Flight.h"
+#include "flight.h"
 
 using namespace std;
 
@@ -31,7 +31,7 @@ int n = flights.size ();
     cout << "         AEROVAULT" << endl;
     cout << "============================" << endl;
 
-  cout << "\n Enter The Flight Number: "
+  cout << "\n Enter The Flight Number: ";
 cin >> number;
 
   bool found = false;
