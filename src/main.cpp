@@ -1,6 +1,6 @@
 #include "passenger.h"
 #inlcude <iostream>
-#inlcude <vector>
+#include <vector>
 #include <string>
 
 using namespace std;
@@ -29,7 +29,7 @@ int main (){
   bool found = false;
 
   for (int i =0; i < m; i++){
-  if (name == passengers[i]){
+  if (name == passengers[i].name){
       found = true;
     passengers[i].display1();
     break;
@@ -40,6 +40,7 @@ int main (){
   if (!found){
     cout << "\n Passenger not Found";
   }
+  return 0;
 
 }
 
