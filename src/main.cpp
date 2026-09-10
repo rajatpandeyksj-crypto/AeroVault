@@ -31,7 +31,7 @@ int main (){
   for (int i =0; i < m; i++){
   if (name == passengers[i]){
       found = true;
-    passengers[i].display();
+    passengers[i].display1();
     break;
   }
     
