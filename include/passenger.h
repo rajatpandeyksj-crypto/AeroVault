@@ -14,7 +14,7 @@ age = a;
 phone = p;
   
 }
-void display(){
+void display1(){
 
 cout << "Name: "<< name;
 cout << "age: " << age;
