@@ -22,6 +22,19 @@ int main (){
   passengers.push_back(p4);
 
   string name;
+  int m = passengers.size();
+
+  cin >> name;
+
+  bool found = false;
+
+  for (int i =0; i < m; i++){
+  if (name == passengers[i]){
+      found = true;
+    passenger.display();
+  }
+  
+  }
 
 }
 
