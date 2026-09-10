@@ -1,28 +1,31 @@
 #ifndef PASSENGER_H
 #define PASSENGER_H
 
-passenger{
+#include <iostream>
+#include <string>
 
-string name;
-int age;
-string phone;
+using namespace std;
 
-passenger( string n, int a, string p){
+class passenger {
+    
+public:
+    string name;
+    int age;
+    string phone;
 
-name = n;
-age = a;
-phone = p;
-  
-}
-void display1(){
+    passenger(string n, int a, string p) {
+        name = n;
+        age = a;
+        phone = p;
+    }
 
-cout << "Name: "<< name;
-cout << "age: " << age;
-cout << "Phone: " << phone;
-  
-}
-
-
-};
+    void display1() {
+        cout << "Name: " << name << endl;
+        
+        cout << "Age: " << age << endl;
+        
+        cout << "Phone: " << phone << endl;
+    }
+}; 
 
 #endif
