@@ -24,6 +24,7 @@ int main (){
   string name;
   int m = passengers.size();
 
+  cout << "Enter the passsenger Name: " <<  endl;
   cin >> name;
 
   bool found = false;
@@ -40,6 +41,7 @@ int main (){
   if (!found){
     cout << "\n Passenger not Found";
   }
+
   return 0;
 
 }
