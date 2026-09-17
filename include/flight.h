@@ -30,15 +30,7 @@ cout << "Price: "<< price << endl;
 cout << "Seats: "<< seats << endl;
 }
 
-bool bookseat(){
-
-if (seats > 0){
- seats--;
- return true;
-}
- return false;
-}
-
+bool bookseat();  
 
 };
 
