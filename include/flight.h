@@ -13,7 +13,7 @@ string destination;
 int price;
 int seats;
 
-Flight(string fn, string s, string d, int p, int st){
+ Flight(string fn, string s, string d, int p, int st){
  flightnumber = fn;
   source = s;
   destination = d;
@@ -29,6 +29,17 @@ cout << "Destination: "<< destination << endl;
 cout << "Price: "<< price << endl;
 cout << "Seats: "<< seats << endl;
 }
+
+bool bookseat(){
+
+if (seats > 0){
+ seats--;
+ return true;
+}
+ return false;
+}
+
+
 };
 
 #endif
