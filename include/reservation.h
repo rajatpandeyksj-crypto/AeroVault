@@ -3,23 +3,29 @@
 
 #include <iostream>
 #include <string>
+#include "flight.h"
+#include "passenger.h"
 
-using namepsace std;
+using namespace std;
 
-class Reservation{
+class Reservation {
+private:
+    string passengerName;
+    string flightNumber;
+
 public:
-string passengerName;
-string flightNumber;
 
-resrevation(string name, string number){
-passengerName = name;
-  flightNumber = number;
-}
+    Reservation(string name, string number) {
+        passengerName = name;
+        flightNumber = number;
+    }
 
-void display(){
-  cout << "Passenger Name: " << passengerName << endl;
-  cout << "Flight Number: " << flightNumber << endl;
-  cout << "Reservation Confirmed" << endl;
-}
-
+    void display() {
+        cout << "Passenger Name: " << passengerName << endl;
+        cout << "Flight Number: " << flightNumber << endl;
+    }
 };
+
+void makeReservation(Flight& flight, passenger& p);
+
+#endif
